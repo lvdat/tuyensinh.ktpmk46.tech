@@ -5,7 +5,9 @@ $path_be = array(
     'config' => BASE.'/inc/vendor/config.php',
     'header' => BASE.'/inc/vendor/header.php',
     'footer' => BASE.'/inc/vendor/footer.php',
-    'function' => BASE.'/inc/vendor/function.php'
+    'function' => BASE.'/inc/vendor/function.php',
+    'fb_vendor' => BASE.'/facebook/vendor/',
+    'core' => BASE.'/facebook/core.php'
 );
 
 $path_fe = array(

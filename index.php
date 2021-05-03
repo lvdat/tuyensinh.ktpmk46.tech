@@ -1,1 +1,4 @@
-Hello World
+<?
+require_once 'inc/vendor/header.php';
+
+?>

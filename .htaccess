@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^dangxuat$ /logout.php
+RewriteRule ^update_info$ /updateinfo.php
+
+# RewriteCond %{HTTPS} !=on [NC]
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

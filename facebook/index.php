@@ -1,6 +1,6 @@
 <?
 require_once 'core.php';
-
+ session_start();
 $fb = new Facebook\Facebook([
   'app_id' => $app_id, // Replace {app-id} with your app id
   'app_secret' => $app_key,

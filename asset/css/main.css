@@ -1,3 +1,117 @@
 body{
     padding-top: 4.5em;
 }
+@media only screen and (min-width: 768px){
+    .sticky{
+       position: -webkit-sticky; /* Safari */
+       position: sticky;
+       top: 4.2em;
+   }
+}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background-color:#F5F5F5;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border:0 solid #000}
+::-webkit-scrollbar-thumb{background:#07F}
+::-webkit-scrollbar-thumb:hover{background:#09F}
+::-webkit-scrollbar-thumb:active{background:#888;-webkit-box-shadow:inset 1px 1px 2px rgba(0,0,0,.3)}
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/*--NOTIFY CSS--*/
+/*
+ * container for positioning
+ */
+.notify {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+/* Positions
+========================================================================== */
+.notify-top-right,
+.notify-bottom-right {
+  left: auto;
+  right: 10px;
+}
+.notify-top-center,
+.notify-bottom-center {
+  left: 50%;
+  margin-left: -175px;
+}
+.notify-bottom-left,
+.notify-bottom-right,
+.notify-bottom-center {
+  top: auto;
+  bottom: 10px;
+}
+
+/* Responsiveness
+========================================================================== */
+/* Phones portrait and smaller */
+@media (max-width: 479px) {
+  /*
+     * Fit in small screen
+     */
+  .notify {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+  }
+}
+
+/* Sub-object: `notify-message`
+========================================================================== */
+.notify-message {
+  position: relative;
+  cursor: pointer;
+}
+
+.notify .alert-default {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}

@@ -1,8 +1,8 @@
 <?
 $host = 'localhost';
-$user = 'levandat_admin';
-$pass = 'Dat@@0962992956';
-$db = 'levandat_cfs';
+$user = 'root';
+$pass = '';
+$db = 'tuyensinh';
 $port = '3306';
 
 $lvd = mysqli_connect($host, $user, $pass, $db, $port);

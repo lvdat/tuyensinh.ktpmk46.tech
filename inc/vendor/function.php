@@ -17,3 +17,15 @@ function login(){
         }
     }else return false;
 }
+function getuser($fb_id){
+    global $lvd;
+    if(!login()) return false;
+    $sql = "SELECT * FROM users WHERE fb_id = '$fb_id' LIMIT 1";
+    $kq = $lvd->query($sql);
+    if($kq->num_rows > 0){
+        $e = mysqli_fetch_assoc($kq);
+        return $e;
+    }else{
+        return 0;
+    }
+}
